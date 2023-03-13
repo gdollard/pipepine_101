@@ -1,5 +1,6 @@
-@Library("shared-library") _
+@Library("shared-library-api-global-lib") _
 
+// this pipeline will use shared libraries
 pipeline {
     agent any
 
