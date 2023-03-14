@@ -12,7 +12,7 @@ pipeline {
         echo 'Testing...'
         snykSecurity(
           snykInstallation: 'snyk@latest',
-          snykTokenId: '9c5e5a1a-b884-4a4a-b525-3640c72fa762',
+          snykTokenId: 'org-snyk-api-token',
           // place other optional parameters here, for example:
           // additionalArguments: '--all-projects --detection-depth=<DEPTH>'
         )
