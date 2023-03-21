@@ -9,8 +9,8 @@ pipeline {
             steps {
                 script {
                     // call a function from the shared-library
-                    helloWorld.sayHello(name: "Mr Blobby", dayOfWeek: "Saturday")
-                    helloWorld.saySomethingElse("Goodbye")
+                    hello.sayHello(name: "Mr Blobby", dayOfWeek: "Saturday")
+                    hello.saySomethingElse("Goodbye")
                 }
             }
         }
