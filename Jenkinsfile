@@ -8,7 +8,7 @@ pipeline {
         stage('Hello') {
             steps {
                 // call a function from the shared-library
-                helloWorld(name: "Mr Blobby", dayOfWeek: "Saturday");
+                sayHello(name: "Mr Blobby", dayOfWeek: "Saturday");
             }
         }
     }
