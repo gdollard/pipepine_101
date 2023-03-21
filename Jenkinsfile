@@ -10,7 +10,7 @@ pipeline {
                 script {
                     // call a function from the shared-library
                     hello.sayHello(name: "Mr Blobby", dayOfWeek: "Saturday")
-                    hello.saySomethingElse("Goodbye")
+                    hello.scanStuff(message: "Scanning folder for my pipeline", dirToScan: "lib")
                 }
             }
         }
