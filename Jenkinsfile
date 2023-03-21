@@ -7,9 +7,11 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                // call a function from the shared-library
-                hello.sayHello(name: "Mr Blobby", dayOfWeek: "Saturday")
-                hello.saySomethingElse("Goodbye")
+                script {
+                    // call a function from the shared-library
+                    hello.sayHello(name: "Mr Blobby", dayOfWeek: "Saturday")
+                    hello.saySomethingElse("Goodbye")
+                }
             }
         }
     }
